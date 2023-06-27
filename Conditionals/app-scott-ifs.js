@@ -24,7 +24,7 @@
 // 0 - 5 free admission
 // 6 - 10 child $10
 // 11 - 64 adult $20
-// 65+ senior $10 
+// 65+ senior $10
 
 // const age = 72;
 
@@ -55,18 +55,30 @@
 // }
 // else {
 //     console.log('Password too short.');
-// } 
+// }
 
 const num = 103;
 
 if (num <= 100) {
-    if (num >= 50) {
-        console.log("HEY!");
-    }
+  if (num >= 50) {
+    console.log('HEY!');
+  }
 } else {
-    if (num < 103) {
-        if (num % 2 === 0) {
-            console.log("YOU GOT ME!");
-        }
+  if (num < 103) {
+    if (num % 2 === 0) {
+      console.log('YOU GOT ME!');
     }
+  }
+}
+
+console.log('Before conditional');
+let random = Math.random();
+if (random < 0.5) {
+  console.log('Your number is less than 0.5!');
+  console.log(random);
+}
+
+if (random >= 0.5) {
+  console.log('Your number is greater than 0.5!');
+  console.log(random);
 }
