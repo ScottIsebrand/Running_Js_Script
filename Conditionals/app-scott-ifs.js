@@ -82,3 +82,29 @@ if (random >= 0.5) {
   console.log('Your number is greater than 0.5!');
   console.log(random);
 }
+
+const dayOfWeek = prompt('Enter a day').toLowerCase();
+if (dayOfWeek === 'monday') {
+  console.log('Ick!');
+} else if (dayOfWeek === 'saturday') {
+  console.log('Yay!');
+} else if (dayOfWeek === 'friday') {
+  console.log('OK.');
+} else {
+  console.log('Meh.');
+}
+
+// 0 - 5 free admission
+// 6 - 10 child $10
+// 11 - 64 adult $20
+// 65+ senior $10
+
+const age = 18;
+
+if (age < 5) {
+  console.log('Children under 5 get in free.');
+} else if (age <= 10) {
+  console.log('$10 per child');
+} else if (age <= 64) {
+  console.log('$20 per adult');
+}
